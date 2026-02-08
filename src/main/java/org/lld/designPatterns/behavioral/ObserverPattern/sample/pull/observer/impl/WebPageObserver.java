@@ -14,7 +14,8 @@ public class WebPageObserver implements WeatherObserver {
     }
 
     @Override
-    public void update(WeatherObservableData weatherObservableData) {
-        System.out.println("Weather data updated to webpage: " + weatherObservableData.toString());
+    public void update() {
+        WeatherObservableData weatherObservableData = weatherObservable.getWeatherData();
+        System.out.println("Weather data updated to mobile: " + weatherObservableData.toString());
     }
 }

@@ -14,7 +14,8 @@ public class MobileObserver implements WeatherObserver {
     }
 
     @Override
-    public void update(WeatherObservableData weatherObservableData) {
+    public void update() {
+        WeatherObservableData weatherObservableData = weatherObservable.getWeatherData();
         System.out.println("Weather data updated to mobile: " + weatherObservableData.toString());
     }
 }

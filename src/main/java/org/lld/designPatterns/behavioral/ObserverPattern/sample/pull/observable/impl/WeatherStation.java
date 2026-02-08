@@ -29,7 +29,7 @@ public class WeatherStation implements WeatherObservable {
             return;
         }
         for(WeatherObserver observer : observerList){
-            observer.update(weatherData);
+            observer.update();
         }
     }
 
@@ -38,4 +38,11 @@ public class WeatherStation implements WeatherObservable {
         this.weatherData = weatherData;
         notifyObservers();
     }
+
+    @Override
+    public WeatherObservableData getWeatherData() {
+        return weatherData;
+    }
+
+
 }

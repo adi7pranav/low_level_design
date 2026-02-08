@@ -16,4 +16,8 @@ public class WeatherObservableData {
         this.humidity = humidity;
         this.temperature = temperature;
     }
+
+    public WeatherObservableData getWeatherData(){
+        return this;
+    }
 }

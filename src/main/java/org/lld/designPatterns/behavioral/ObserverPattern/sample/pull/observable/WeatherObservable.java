@@ -13,4 +13,6 @@ public interface WeatherObservable {
 
     void setWeatherReading(WeatherObservableData weatherReading);
 
+    WeatherObservableData getWeatherData();
+
 }
