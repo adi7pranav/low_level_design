@@ -7,7 +7,7 @@ import org.lld.designPatterns.behavioral.ObserverPattern.sample.push.observer.We
 import org.lld.designPatterns.behavioral.ObserverPattern.sample.push.observer.impl.MobileObserver;
 import org.lld.designPatterns.behavioral.ObserverPattern.sample.push.observer.impl.WebPageObserver;
 
-public class ObserverMain {
+public class ObserverPushMain {
 
     static void main() {
         //observable
