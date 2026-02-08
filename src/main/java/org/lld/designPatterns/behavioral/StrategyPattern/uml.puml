@@ -1,0 +1,27 @@
+@startuml
+
+class Client
+
+class Context {
+  + strategy : Strategy
+  + performOperation()
+}
+
+interface Strategy <<interface>> {
+  + execute()
+}
+
+class ConcreteStrategyA {
+  + execute()
+}
+
+class ConcreteStrategyB {
+  + execute()
+}
+
+Client --> Context
+Context o-- Strategy
+Strategy <|.. ConcreteStrategyA
+Strategy <|.. ConcreteStrategyB
+
+@enduml
