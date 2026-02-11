@@ -7,7 +7,7 @@ import org.lld.designPatterns.structural.decorator.sample.base.impl.MachaCoffee;
 import org.lld.designPatterns.structural.decorator.sample.decorator.impl.MilkDecorator;
 import org.lld.designPatterns.structural.decorator.sample.decorator.impl.SugarDecorator;
 
-public class CoffeeShop {
+public class DecoratorMain {
 
     static void main() {
 
